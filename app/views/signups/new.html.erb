@@ -1,0 +1,8 @@
+<!-- app/views/restaurants/new.html.erb -->
+<%= form_with model: @signup do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <%= f.submit %>
+<% end %>

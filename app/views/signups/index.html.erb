@@ -1,0 +1,7 @@
+<!-- app/views/signups/index.html.erb -->
+<ul>
+  <% @signups.each do |signup| %>
+    <li><%= signup.name %></li>
+    <li><%= signup.email %></li>
+  <% end %>
+</ul>
