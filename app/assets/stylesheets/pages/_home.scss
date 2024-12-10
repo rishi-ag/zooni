@@ -1,15 +1,30 @@
 // Specific CSS for your home-page
 
+.grid-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.grid-container > div:nth-child(1) {
+  height: 400px;
+}
+
 .banner {
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url("banner.jpg");
-  // padding: 150px 0;
   background-size: cover;
   background-position: center;
-  border-radius: 25px;
+  border-radius: 20px;
+  grid-column: span 2;
+}
+
+.banner img {
+  width: 100%;
 }
 
 .banner h1 {
-  margin: 0;
+  margin: 20px auto;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
@@ -18,6 +33,7 @@
 
 .banner p {
   font-size: 20px;
+  margin: 20px auto;
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
