@@ -4,7 +4,11 @@
         <div class="container">
           <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
           <p>Change your life and learn to code at one of our campuses around the world.</p>
-          <%= link_to "Apply Now", new_signup_path, class: "btn-ghost"%>
+          <%= link_to "Apply Now",
+          new_signup_path,
+          class: "btn-ghost",
+          data: {action: "click->dialog#open", turbo_frame: "modal"}
+          %>
         </div>
       </div>
   </div>

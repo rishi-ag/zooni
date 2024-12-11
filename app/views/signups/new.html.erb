@@ -1,8 +1,6 @@
-<!-- app/views/restaurants/new.html.erb -->
-<%= form_with model: @signup do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-  <%= f.submit %>
+<%= render 'layouts/turbo_dialog_modal' do %>
+  <div data-action="turbo:submit-end->dialog#submitEnd">
+    <%= render "new_signup", signup: @signup %>
+    <br>
+  </div>
 <% end %>

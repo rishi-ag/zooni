@@ -1,0 +1,17 @@
+
+<div class="signup-container">
+  <div><%= link_to "X", root_path, data: {action: "dialog#close"}%></div>
+  <div class="signup-form">
+    <div class="form-left">
+      <h2>New Signup</h2>
+      <p>Sign up to our list for 15% off your first order. Each month we also choose a winner for a $150 gift card.</p>
+    </div>
+    <div class="form-right">
+      <%= form_with model: signup do |f| %>
+        <%= f.text_field :name, class: "box", placeholder: "Enter Name" %>
+        <%= f.email_field :email, class: "box", placeholder: "Enter Email" %>
+        <%= f.submit "Join the family", data: {turbo_frame: "_top"}, id: "submit" %>
+      <% end %>
+    </div>
+  </div>
+</div>

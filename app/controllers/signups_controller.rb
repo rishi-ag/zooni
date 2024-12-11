@@ -1,4 +1,5 @@
 class SignupsController < ApplicationController
+  before_action :ensure_frame_response, only: %i[new]
 
   def index
     @signups = Signup.all
@@ -15,10 +16,17 @@ class SignupsController < ApplicationController
   def create
     @signup = Signup.new(signup_params)
     @signup.save
-    redirect_to signup_path
+
+    if @signup.save
+      redirect_to root_path
+    end
   end
 
   private
+
+  def ensure_frame_response
+    redirect_to root_path unless turbo_frame_request?
+  end
 
   def signup_params
     params.require(:signup).permit(:name, :email)

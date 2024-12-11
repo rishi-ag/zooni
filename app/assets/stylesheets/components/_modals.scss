@@ -1,0 +1,22 @@
+.modal-design {
+  // background-color: aliceblue;
+  position: fixed;
+  z-index: 1;
+  // padding: 1em;
+
+  /* Centering */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  overflow: auto;
+  border-radius: 5px;
+  // /* Add the drop shadow */
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.19);
+  background-color: rgba(82, 124, 118, 0.80);
+}
+
+.modal-design::backdrop {
+  background-color: rgba(82, 124, 118, 0.30);
+  filter: blur(10px);
+}

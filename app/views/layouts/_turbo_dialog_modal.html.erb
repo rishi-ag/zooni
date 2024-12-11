@@ -1,0 +1,9 @@
+<%= turbo_frame_tag :modal do %>
+  <dialog data-controller="dialog" data-action="click->dialog#clickOutside" class="modal-design">
+    <div class="p-8">
+
+      <%= yield %>
+
+    </div>
+  </dialog>
+<% end %>
