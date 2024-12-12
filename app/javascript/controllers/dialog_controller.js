@@ -23,6 +23,7 @@ export default class extends Controller {
 
   open() {
     this.element.showModal()
+    document.getElementById('signup_name').focus();
     document.body.classList.add('overflow-hidden')
   }
 

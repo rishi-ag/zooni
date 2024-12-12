@@ -1,10 +1,12 @@
 // Specific CSS for your home-page
 
+.home-container {
+  margin: clamp(0.5rem, 1.5vh, 1.5rem) clamp(0.3rem, 14vw, 15rem);
+}
 .grid-container {
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
-  margin: 20px 120px;
-  // padding: 0 ;
+
 }
 
 .grid-container > div:nth-child(1) {
@@ -18,7 +20,7 @@
   border-radius: 20px;
   grid-column: span 2;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .banner img {
@@ -28,12 +30,12 @@
 .banner h1 {
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 30px;
-  font-weight: 500;
+  font-size: $fs-xl;
+  // font-weight: 500;
 }
 
 .banner p {
-  font-size: 18px;
+  font-size: clamp(1rem, 1.25rem, 2rem);;
   margin: 20px auto;
   color: white;
   opacity: .7;
@@ -41,10 +43,15 @@
 }
 
 .banner-left {
-  flex: 1;
+  flex: 2;
   padding: 50px 30px;
+  width: clamp(100%, 50%, 50%);
 }
 
 .banner-right {
   flex: 1
+}
+
+.banner-button {
+  margin-top: 2rem;
 }

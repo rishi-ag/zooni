@@ -7,9 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
-  padding: 0px 50px;
+  max-height: 100px;
+  padding: clamp(0.5rem, 1vh, 2rem) clamp(0.3rem, 14vw, 15rem);
   color: rgba(0,0,0,0.3);
+  flex-wrap:wrap;
 }
 .footer-links {
   display: flex;

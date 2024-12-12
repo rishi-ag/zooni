@@ -41,10 +41,10 @@ justify-items: flex-start;
 
 
 .box{
-  padding: 12px;
-  margin-right: 10px;
+  padding: clamp(0.5rem, 1vh, 2rem);
+  margin: clamp(0.5rem, 1vh, 2rem);
   width: 100%;
-  margin: 15px;
+
   border: 1px solid black;
   outline: none;
   border-radius: 10px;
@@ -53,10 +53,10 @@ justify-items: flex-start;
 #submit {
   background-color: black;
   color: white;
-  padding: 12px;
-  margin-right: 10px;
+  padding: clamp(0.5rem, 1vh, 2rem);
+  margin: clamp(0.5rem, 1vh, 2rem);
   width: 100%;
-  margin: 15px;
+  // margin: 15px;
   border: 1px solid black;
   outline: none;
   border-radius: 10px;

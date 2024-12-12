@@ -7,11 +7,11 @@ $body-font: "Lato", "Helvetica", "sans-serif";
 $headers-font: "Noto Sans JP", "Roboto", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+
+$gray: #F4F4F4; // Defining a variable
+$spacer: 8px;
+
+$fs-xl: clamp(1.5rem, 5vh, 8rem);
+$fs-600: 1.5rem;
+$fs-500: clamp(1rem, 2vh, 2rem);
+$fs-400: 1rem;

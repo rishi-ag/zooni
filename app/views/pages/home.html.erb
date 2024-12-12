@@ -5,11 +5,13 @@
           <h1>Farm to Fabric.</h1>
           <h1>Baby Clothes for a Healthier Tomorrow.</h1>
           <p>Organic cotton baby clothes that are gentle on your baby's skin and the planet. Explore our collection today.</p>
-          <%= link_to "Join us",
-          new_signup_path,
-          class: "btn-ghost",
-          data: {action: "click->dialog#open", turbo_frame: "modal"}
-          %>
+          <div class="banner-button">
+            <%= link_to "Join us",
+            new_signup_path,
+            class: "btn-ghost",
+            data: {action: "click->dialog#open", turbo_frame: "modal"}
+            %>
+          </div>
         </div>
         <div class="banner-right">
         </div>

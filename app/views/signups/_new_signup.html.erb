@@ -8,8 +8,8 @@
     </div>
     <div class="form-right">
       <%= form_with model: signup do |f| %>
-        <%= f.text_field :name, class: "box", placeholder: "Enter Name" %>
-        <%= f.email_field :email, class: "box", placeholder: "Enter Email" %>
+        <%= f.text_field :name, class: "box", placeholder: "Name" %>
+        <%= f.email_field :email, class: "box", placeholder: "Email" %>
         <%= f.submit "Join the family", data: {turbo_frame: "_top"}, id: "submit" %>
       <% end %>
     </div>
