@@ -15,5 +15,5 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  max-width: 200px;
+  max-width: clamp(150px, 15vw, 300px) ;
 }

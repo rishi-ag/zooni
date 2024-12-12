@@ -26,3 +26,9 @@
 .footer .fa-heart {
   color: #D23333;
 }
+
+@media only screen and (max-width:768px) {
+  .footer {
+    justify-content: center;
+  }
+}

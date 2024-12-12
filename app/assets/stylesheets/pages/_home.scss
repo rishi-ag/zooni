@@ -6,7 +6,6 @@
 .grid-container {
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
-  // overflow: auto;
 }
 
 .grid-container > div:nth-child(1) {
@@ -31,11 +30,10 @@
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: $fs-xl;
-  // font-weight: 500;
 }
 
 .banner p {
-  font-size: clamp(1rem, 1.25rem, 2rem);
+  font-size: $fs-500;
   margin: 20px auto;
   color: white;
   opacity: .7;
