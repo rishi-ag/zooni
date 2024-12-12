@@ -13,3 +13,10 @@
 @import "components/footer";
 @import "components/button";
 @import "pages/index";
+
+
+.site-container{
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}

@@ -6,7 +6,7 @@
 .grid-container {
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
-  overflow: auto;
+  // overflow: auto;
 }
 
 .grid-container > div:nth-child(1) {
