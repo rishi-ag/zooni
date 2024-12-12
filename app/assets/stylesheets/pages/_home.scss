@@ -17,6 +17,8 @@
   background-position: center;
   border-radius: 20px;
   grid-column: span 2;
+  display: flex;
+  justify-content: center;
 }
 
 .banner img {
@@ -27,14 +29,23 @@
   // margin: 20px auto;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .banner p {
-  font-size: 20px;
+  font-size: 18px;
   margin: 20px auto;
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner-left {
+  flex: 1;
+  padding: 50px 30px;
+}
+
+.banner-right {
+  flex: 1
 }

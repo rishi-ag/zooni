@@ -3,10 +3,11 @@
   background-color: #527c76;
   border: 1px solid #527c76;
   padding: 8px 24px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
+  border-radius: 15px;
+  font-weight: 300;
+  opacity: 0.85;
   transition: opacity 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-ghost:hover {

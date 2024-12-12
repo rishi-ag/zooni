@@ -1,15 +1,17 @@
 <div class="home-container">
   <div class="grid-container">
       <div class="banner">
-        <div class="container">
-          <h1>From Farm to Fabric.</h1>
-          <h1>Sustainable Baby Clothes for a Healthier Tomorrow.</h1>
-          <p>Soft, Sustainable, and Safe — Our Organic Cotton Baby Clothes Are Gentle on Your Baby’s Skin and the Planet. Crafted with Love and Care for a Healthier Future. Explore Our Collection Today!</p>
-          <%= link_to "Apply Now",
+        <div class="banner-left">
+          <h1>Farm to Fabric.</h1>
+          <h1>Baby Clothes for a Healthier Tomorrow.</h1>
+          <p>Organic cotton baby clothes that are gentle on your baby's skin and the planet. Explore our collection today.</p>
+          <%= link_to "Join us",
           new_signup_path,
           class: "btn-ghost",
           data: {action: "click->dialog#open", turbo_frame: "modal"}
           %>
+        </div>
+        <div class="banner-right">
         </div>
       </div>
   </div>
