@@ -3,12 +3,12 @@
 .grid-container {
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
-  max-width: 1200px;
-  margin: 20px auto;
+  margin: 20px 120px;
+  // padding: 0 ;
 }
 
 .grid-container > div:nth-child(1) {
-  height: 400px;
+  min-height: 400px;
 }
 
 .banner {
@@ -26,7 +26,6 @@
 }
 
 .banner h1 {
-  // margin: 20px auto;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 30px;

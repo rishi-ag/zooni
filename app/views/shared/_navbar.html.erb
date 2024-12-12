@@ -10,18 +10,19 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-        <%# if user_signed_in? %>
+          <li class="nav-item active">
+            <%= link_to "Join us",
+            new_signup_path,
+            class: "nav-link",
+            data: {action: "click->dialog#open", turbo_frame: "modal"}
+            %>
+          </li>
           <li class="nav-item active">
             <%= link_to "Home", "#", class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "About Us", "#", class: "nav-link" %>
           </li>
-        <%# else %>
-          <!--li class="nav-item"-->
-            <%#= link_to "Login", new_user_session_path, class: "nav-link" %>
-          <!--/li-->
-        <%# end %>
       </ul>
     </div>
   </div>
