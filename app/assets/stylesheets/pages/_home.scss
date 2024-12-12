@@ -6,7 +6,7 @@
 .grid-container {
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
-
+  overflow: auto;
 }
 
 .grid-container > div:nth-child(1) {
@@ -35,7 +35,7 @@
 }
 
 .banner p {
-  font-size: clamp(1rem, 1.25rem, 2rem);;
+  font-size: clamp(1rem, 1.25rem, 2rem);
   margin: 20px auto;
   color: white;
   opacity: .7;
